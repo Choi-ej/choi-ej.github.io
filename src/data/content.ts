@@ -26,14 +26,14 @@ export const siteUrl =
 
 export const profile = {
   name: "Jin Choi",
-  headline: "Solutions Engineering · Technical Pre-Sales · AI/ML Engineer",
+  headline: "Solutions Engineering · Technical Pre-Sales · AI/ML Engineering",
   location: "Sydney, NSW",
   email: "ejchoi0710@gmail.com",
   linkedin: "https://www.linkedin.com/in/choi-jin/",
   github: "https://github.com/Choi-ej",
   // Set to a file in /public (e.g. "/jin-choi-resume.pdf") to show a download link.
   resumeUrl: undefined as string | undefined,
-  title: "Jin Choi - Solutions Engineering, Technical Pre-Sales, AI/ML Engineer",
+  title: "Jin Choi - Solutions Engineering, Technical Pre-Sales, AI/ML Engineering",
   description:
     "Master of Computer Science (Cybersecurity) candidate at the University of Sydney with SaaS pre-sales, statistical research, and customer-facing experience.",
 };
