@@ -1,4 +1,4 @@
-import { achievement, education, experience, profile, skills, summary, teaching, type Entry } from "@/data/content";
+import { achievements, education, experience, profile, skills, summary, teaching, type Entry } from "@/data/content";
 import styles from "./page.module.css";
 
 function ExternalLink({ href, children }: { href: string; children: string }) {
@@ -101,14 +101,19 @@ export default function Home() {
           ))}
         </Section>
 
-        <Section id="achievement" title="Selected achievement">
-          <article className={styles.entry}>
-            <div className={styles.entryHead}>
-              <h3 className={styles.role}>{achievement.title}</h3>
-              <p className={styles.when}>{achievement.period}</p>
-            </div>
-            <p className={styles.prose}>{achievement.body}</p>
-          </article>
+        <Section id="achievements" title="Selected achievements">
+          {achievements.map((a) => (
+            <article key={a.title} className={styles.entry}>
+              <div className={styles.entryHead}>
+                <h3 className={styles.role}>{a.title}</h3>
+                <p className={styles.when}>
+                  {a.organisation && `${a.organisation} | `}
+                  {a.period}
+                </p>
+              </div>
+              <p className={styles.prose}>{a.body}</p>
+            </article>
+          ))}
         </Section>
 
         <Section id="skills" title="Technical skills, languages and certifications">

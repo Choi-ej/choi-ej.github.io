@@ -154,11 +154,20 @@ export const education: EducationItem[] = [
   },
 ];
 
-export const achievement = {
-  title: "Hack the Harbour Cybersecurity CTF",
-  period: "July 2026",
-  body: "Worked on cryptography, reverse engineering and web security challenges in a four-person team, including testing a GenAI-powered website for prompt-injection weaknesses and refining inputs based on the model’s responses until the team recovered the flag. The team placed 3rd of 63.",
-};
+// Most recent first.
+export const achievements: { title: string; organisation?: string; period: string; body: string }[] = [
+  {
+    title: "Hack the Harbour Cybersecurity CTF",
+    period: "July 2026",
+    body: "Worked on cryptography, reverse engineering and web security challenges in a four-person team, including testing a GenAI-powered website for prompt-injection weaknesses and refining inputs based on the model’s responses until the team recovered the flag. The team placed 3rd of 63.",
+  },
+  {
+    title: "Certificate of Excellence, INFO5990 Professional Practice in IT",
+    organisation: "University of Sydney",
+    period: "June 2026",
+    body: "Nominated as one of the unit’s Best Projects for GlowMatch, a five-member team case study proposing a unified Customer Data Platform for a beauty-tech e-commerce business whose AR virtual try-on, AI chatbot and transaction data were fragmented. Evaluated IT governance structures, justified the proposed solution, and developed the six-month Agile-DevOps implementation roadmap, estimated AUD 660,000 budget and cross-functional resource plan. Also consolidated the team’s work into the final report as editing and formatting coordinator.",
+  },
+];
 
 export const skills = [
   { label: "Data and analysis", value: "Python, SQL, R, SPSS, Excel VBA" },
