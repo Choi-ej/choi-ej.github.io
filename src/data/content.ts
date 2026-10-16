@@ -163,7 +163,6 @@ export const achievements: { title: string; organisation?: string; period: strin
   },
   {
     title: "Certificate of Excellence, INFO5990 Professional Practice in IT",
-    organisation: "University of Sydney",
     period: "June 2026",
     body: "Nominated as one of the unit’s Best Projects for GlowMatch, a five-member team case study proposing a unified Customer Data Platform for a beauty-tech e-commerce business whose AR virtual try-on, AI chatbot and transaction data were fragmented. Evaluated IT governance structures, justified the proposed solution, and developed the six-month Agile-DevOps implementation roadmap, estimated AUD 660,000 budget and cross-functional resource plan. Also consolidated the team’s work into the final report as editing and formatting coordinator.",
   },
